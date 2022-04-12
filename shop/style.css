@@ -87,6 +87,8 @@ html, body{
 /* end of the default setup
 	unique per page values start here */
 
+/*section 1*/
+
 .s1 h1 {
 	font-size: 1.9rem;
 	margin-block: 0 0.4em;
@@ -169,11 +171,13 @@ html, body{
 .stock h3 {
 	color: white;
 	font-weight: normal;
+	margin: 1.2em 0 0.9em 0;
 }
 
 .stock h4 {
 	color: rgba(255, 255, 255, 0.47);
 	font-weight: normal;
+	margin: 0;
 }
 
 .stock p {
