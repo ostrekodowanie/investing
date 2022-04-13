@@ -5,9 +5,9 @@ const nav = document.querySelector('.navbar')
 
 // functions
 
-const navHeight = () => {
-    let screenHeight = window.innerHeight
-    nav.style.height = screenHeight + "px"
+const hideNavbar = () => {
+    nav.classList.remove('nav-active')
+    closeX.classList.remove('x-active')
 }
 
 const navMove = () => {
