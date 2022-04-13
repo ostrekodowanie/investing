@@ -3,6 +3,7 @@ const closeX = document.querySelector('.x')
 const burger = document.querySelector('.burger')
 const nav = document.querySelector('.navbar')
 
+
 // functions
 
 const hideNavbar = () => {
@@ -26,11 +27,6 @@ const navMove = () => {
     })
 }
 
-const outsideNav = () => {
-    document.addEventListener('click', e => {
-        if(e.target !== nav && e.target !== burger) hideNavbar()
-    })
-}
-
 
 navMove();
+
