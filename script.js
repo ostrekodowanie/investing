@@ -34,4 +34,3 @@ const outsideNav = () => {
 
 
 navMove();
-outsideNav();
