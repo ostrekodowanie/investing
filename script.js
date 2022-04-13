@@ -2,7 +2,6 @@
 const closeX = document.querySelector('.x')
 const burger = document.querySelector('.burger')
 const nav = document.querySelector('.navbar')
-const header = document.querySelector('.header')
 
 // functions
 
@@ -11,10 +10,16 @@ const hideNavbar = () => {
     closeX.classList.remove('x-active')
 }
 
+const navHeight = () => {
+    let screenHeight = window.innerHeight
+    nav.style.height = screenHeight + "px";
+}
+
 const navMove = () => {
     burger.addEventListener('click', () => {
         nav.classList.add('nav-active')
         closeX.classList.add('x-active')
+        navHeight();
     })
     closeX.addEventListener('click', () => {
         hideNavbar();
@@ -23,7 +28,7 @@ const navMove = () => {
 
 const outsideNav = () => {
     document.addEventListener('click', e => {
-        if(e.target !== nav && e.target !== burger && e.target !== header) hideNavbar()
+        if(e.target !== nav && e.target !== burger) hideNavbar()
     })
 }
 
