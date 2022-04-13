@@ -2,6 +2,7 @@
 const closeX = document.querySelector('.x')
 const burger = document.querySelector('.burger')
 const nav = document.querySelector('.navbar')
+const header = document.querySelector('.header')
 
 // functions
 
@@ -12,8 +13,8 @@ const hideNavbar = () => {
 
 const navMove = () => {
     burger.addEventListener('click', () => {
-        nav.classList.toggle('nav-active')
-        closeX.classList.toggle('x-active')
+        nav.classList.add('nav-active')
+        closeX.classList.add('x-active')
     })
     closeX.addEventListener('click', () => {
         hideNavbar();
@@ -22,7 +23,7 @@ const navMove = () => {
 
 const outsideNav = () => {
     document.addEventListener('click', e => {
-        if(e.target !== nav && e.target !== burger) hideNavbar()
+        if(e.target !== nav && e.target !== burger && e.target !== header) hideNavbar()
     })
 }
 
