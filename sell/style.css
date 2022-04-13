@@ -14,6 +14,7 @@ img {
 html, body{	
 	font-family: Poppins, sans-serif;
 	background-color: #0A0A0B;
+	margin: 0;
 	color: rgba(255, 255, 255, 0.9);
 	overflow-x: hidden;
 	display: flex;
@@ -24,11 +25,11 @@ html, body{
 
 main,
 .header {
-	padding: 0 8vw;
+	padding: 0 10vw;
 }
 
 .header {
-	height: 5rem;
+	height: 6rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -75,7 +76,7 @@ main,
 	position: absolute;
 		top: 0;
 		right: 0;
-	margin: 2rem 1.6rem;
+	margin: 2rem 1.8rem;
 	z-index: 2;
 	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(334deg) brightness(80%) contrast(90%);
 	max-height: 1.4rem;
