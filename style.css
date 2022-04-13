@@ -108,13 +108,13 @@ main,
 
 .s1 p {
 	text-align: center;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	color: rgba(255, 255, 255, 0.58);
 	margin: 1em 0 2em 0;
 }
 
 .main-image {
-	max-height: 2in;
+	max-height: 11rem;
 }
 
 .buttons {
