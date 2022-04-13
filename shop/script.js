@@ -34,4 +34,3 @@ const navHeight = () => {
 
 navHeight();
 navMove();
-outsideNav();
