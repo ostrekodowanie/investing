@@ -19,7 +19,6 @@ const navMove = () => {
     burger.addEventListener('click', () => {
         nav.classList.add('nav-active')
         closeX.classList.add('x-active')
-        navHeight();
     })
     closeX.addEventListener('click', () => {
         hideNavbar();
