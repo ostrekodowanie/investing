@@ -127,10 +127,9 @@ main {
 /* cart-table */
 
 .cart-table {
-	margin-top: 2.5rem;
+	margin-top: 1rem;
 	display: grid;
 	grid-template-columns: 4fr 2.5fr repeat(2, 1fr);
-	row-gap: 1rem;
 }
 
 .cart-table * {
@@ -143,6 +142,7 @@ main {
 
 .cart-table h3 {
 	color: #246FFF;
+	padding: 1em 0 1em 0;
 }
 
 .cart-table .name {
@@ -150,7 +150,7 @@ main {
 	grid-column: 1 / 2;
 	font-weight: 500;
 	color: rgba(255, 255, 255, 0.8);
-	min-height: 6rem;
+	min-height: 7rem;
 }
 
 .cart-table .price {
@@ -158,14 +158,14 @@ main {
 	font-size: 1rem;
 	font-weight: 400;
 	color: rgba(255, 255, 255, 0.6);
-	min-height: 6rem;
+	min-height: 7rem;
 }
 
 .cart-table .value {
 	font-size: 1rem;
 	font-weight: 400;
 	color: rgba(255, 255, 255, 0.6);
-	min-height: 6rem;
+	min-height: 7rem;
 }
 
 .cart-table .delete {
@@ -173,7 +173,7 @@ main {
 	padding: 0;
 	width: 100%;
 	justify-content: flex-end;
-	min-height: 6rem;
+	min-height: 7rem;
 }
 
 .delete img {
@@ -339,7 +339,7 @@ main {
 	}
 
 	.buttons a {
-		font-size: 1.4rem;
+		font-size: 1.3rem;
 		margin-left: 4em;
 	}
 
