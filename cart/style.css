@@ -23,6 +23,10 @@ html, body{
 	z-index: -99;
 }
 
+main {
+	min-height: 88vh;
+}
+
 .section,
 .header {
 	padding: 0 10vw;
@@ -72,6 +76,10 @@ html, body{
 	color: rgba(255, 255, 255, 0.62);
 }
 
+.navbar a:last-child {
+	flex-shrink: 0;
+}
+
 .navbar .x {
 	position: absolute;
 		top: 0;
@@ -92,7 +100,7 @@ html, body{
 
 .s1 h1 {
 	font-size: 1.9rem;
-	margin: 0 0 0.8em 0;
+	margin: 0 0 1rem 0;
 }
 
 .title {
@@ -109,6 +117,7 @@ html, body{
 	color: rgba(255, 255, 255, 0.47);
 	padding: 0.8em 1.2em;
 	border-radius: 1rem;
+	margin: 0 0 1rem 0;
 }
 
 .title a:hover {
@@ -118,9 +127,9 @@ html, body{
 /* cart-table */
 
 .cart-table {
-	margin-top: 3rem;
+	margin-top: 2.5rem;
 	display: grid;
-	grid-template-columns: 2.5fr 1.5fr repeat(2, 1fr);
+	grid-template-columns: 4fr 2.5fr repeat(2, 1fr);
 	row-gap: 1rem;
 }
 
@@ -162,8 +171,8 @@ html, body{
 .cart-table .delete {
 	position: relative;
 	padding: 0;
-	justify-self: center;
-	justify-content: center;
+	width: 100%;
+	justify-content: flex-end;
 	min-height: 6rem;
 }
 
@@ -209,9 +218,30 @@ html, body{
 		right: 0;
 	width: 200%;
 	transform: translateX(100%);
+	pointer-events: none;
+	cursor: default;
 }
 
+.buttons {
+	margin-top: .5in;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
 
+.buttons a {
+	color: rgba(255, 255, 255, 0.9);
+	text-decoration: none;
+	font-size: 1.2rem;
+	margin-left: 2em;
+	display: flex;
+	align-items: center;
+}
+
+.buttons a:last-child {
+	gap: .8em;
+}
 
 .footer {
 	margin-top: 2rem;
@@ -235,3 +265,85 @@ html, body{
 	opacity: 1 !important;
 }
 
+.delete-text {
+	display: none;
+}
+
+
+@media only screen and (min-width: 750px) {
+	/*navbar*/
+	.x,
+	.burger {
+		display: none;
+	}
+
+	.header {
+		height: 7rem;
+	}
+	.navbar {
+		position: relative;
+		height: 100%;
+		transform: translateX(0%);
+		flex-direction: row;
+		justify-content: space-between;
+		width: 35%;
+		opacity: 1;
+		transition: initial;
+	}
+
+	.navbar a {
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+}
+
+@media only screen and (min-width: 1340px) {
+
+	.delete-text {
+		display: inline;
+		margin-right: 0.2em;
+		font-size: 1.1rem;
+		color: rgba(255, 255, 255, 0.9);
+	}
+
+	.s1 h1 {
+		font-size: 3rem;
+	}
+
+	.title {
+		margin-top: 2rem;
+	}
+
+	.cart-table {
+		grid-template-columns: 1.5fr repeat(3, 1fr);
+	}
+
+	.cart-table .delete {
+		justify-content: flex-start;
+	}
+
+	.cart-table .name {
+		font-size: 1.2rem;
+	}
+
+	.cart-table .price,
+	.cart-table .value {
+		font-size: 1.2rem;
+	}
+
+	/*buttons*/ 
+
+	.buttons {
+		margin-top: .8in;
+	}
+
+	.buttons a {
+		font-size: 1.4rem;
+		margin-left: 4em;
+	}
+
+.buttons a:last-child {
+	gap: .8em;
+}
+}
