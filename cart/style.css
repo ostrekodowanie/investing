@@ -343,7 +343,11 @@ main {
 		margin-left: 4em;
 	}
 
-.buttons a:last-child {
-	gap: .8em;
-}
+	.buttons a:last-child {
+		gap: .8em;
+	}
+	
+	.footer h2 {
+		font-size: 2rem;
+	}
 }
