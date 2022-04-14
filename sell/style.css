@@ -114,7 +114,7 @@ main,
 
 .searchbar {
 	font-size: 1.1rem;
-	padding: 0.9em 0 0.8em 2.6em;
+	padding: 1em 0 1em 2.6em;
 	max-width: 80%;
 	border-radius: 0.8rem;
 	background: url('images/search.svg') no-repeat scroll;
