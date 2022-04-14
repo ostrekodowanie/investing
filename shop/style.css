@@ -15,7 +15,6 @@ html, body{
 	font-family: Poppins, sans-serif;
 	background-color: #0A0A0B;
 	color: rgba(255, 255, 255, 0.9);
-	margin: 0;
 	overflow-x: hidden;
 	display: flex;
 	flex-direction: column;
@@ -25,11 +24,11 @@ html, body{
 
 .section,
 .header {
-	padding: 0 10vw;
+	padding: 0 8vw;
 }
 
 .header {
-	height: 6rem;
+	height: 5rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -67,12 +66,12 @@ html, body{
 	transition: all 200ms ease;
 }
 
-.navbar .x {
+.navbar a {
 	text-decoration: none;
 	color: rgba(255, 255, 255, 0.62);
 }
 
-.navbar img {
+.navbar .x {
 	position: absolute;
 		top: 0;
 		right: 0;
