@@ -3,7 +3,6 @@ const closeX = document.querySelector('.x')
 const burger = document.querySelector('.burger')
 const nav = document.querySelector('.navbar')
 
-
 // functions
 
 const hideNavbar = () => {
@@ -27,6 +26,44 @@ const navMove = () => {
     })
 }
 
+//appending or removing html paragraph for each of the stock divs
 
-navMove();
+const stock = document.querySelectorAll('.stock')
+const stockParagraph = document.querySelectorAll('.stock p')
+const stockTextDiv = document.querySelectorAll('.stock-text')
+
+
+const appendToStockText = () => {
+    let screenWidth = window.innerWidth
+    if(screenWidth >= 1340) {
+        for(let i = 0; i < stock.length; i++) {
+            stockTextDiv[i].append(stockParagraph[i])
+        }
+    }
+}
+
+const removeFromStockText = () => {
+    let screenWidth = window.innerWidth
+    let putBefore = document.querySelectorAll('.stock a')
+    if(screenWidth < 1340) {
+        for(let i = 0; i < stock.length; i++) {
+            stock[i].insertBefore(stockParagraph[i], putBefore[i])
+        }
+    }
+}
+
+
+//calling functions based on the screen width
+
+window.addEventListener('resize', () => {
+    let screenWidth = window.innerWidth
+    if(screenWidth < 750) navMove()
+        else nav.style.height = "6rem"
+    appendToStockText()
+    removeFromStockText()
+})
+
+//since css is mobile first, calling a function to set default for desktop
+
+appendToStockText()
 
