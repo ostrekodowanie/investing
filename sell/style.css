@@ -72,6 +72,10 @@ main,
 	color: rgba(255, 255, 255, 0.62);
 }
 
+.cart-image {
+	height: 2em;
+}
+
 .navbar .x {
 	position: absolute;
 		top: 0;
@@ -258,3 +262,98 @@ main,
 	opacity: 1 !important;
 }
 
+@media only screen and (min-width: 750px) {
+	/*navbar*/
+	.x,
+	.burger {
+		display: none;
+	}
+
+	.header {
+		height: 7rem;
+	}
+	.navbar {
+		position: relative;
+		height: 100%;
+		transform: translateX(0%);
+		flex-direction: row;
+		justify-content: space-between;
+		width: 35%;
+		opacity: 1;
+		transition: initial;
+	}
+
+	.navbar a {
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+}
+
+@media only screen and (min-width: 1340px) {
+	.s1 {
+		margin-top: 3rem;
+	}
+	.s1 h1 {
+		font-size: 3rem;
+	}
+
+	.s1 p {
+		font-size: 1.7rem;
+	}
+
+	.s1 input {
+		font-size: 1.5rem;
+		max-width: 100%;
+		border-radius: 1rem;
+		padding-right: 8em;
+	}
+
+	/*section2*/
+	.s2 h2 {
+		font-size: 2rem;
+	}
+
+	.stocks {
+		gap: 4rem;
+	}
+
+	.stock {
+		padding: 0;
+		display: flex;
+		align-items: center;
+		column-gap: 3rem;
+	}
+
+	.stock img {
+		max-width: 30%;
+	}
+
+	.stock-text {
+		display: grid;
+		grid-template-columns: repeat(2, 3in);
+	}
+
+	.stock-text h3 {
+		margin: 0;
+		font-size: 1.6rem;
+		align-self: center;
+	}
+
+	.stock-text h4 {
+		align-self: center;
+		font-size: 1.4rem;
+	}
+
+	.stock-text p {
+		grid-column: 1 / 3;
+		text-align: left;
+		justify-self: start;
+		font-size: 1.2rem;
+	}
+
+	.select {
+		font-size: 1.5rem;
+		margin: 0 4em 0 auto;
+	}
+}
