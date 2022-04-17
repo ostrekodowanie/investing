@@ -299,7 +299,9 @@ main {
 }
 
 @media only screen and (min-width: 1340px) {
-
+	.header small {
+		font-size: 1rem;
+	}
 	.delete-text {
 		display: inline;
 		margin-right: 0.2em;
