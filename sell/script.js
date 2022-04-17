@@ -1,9 +1,7 @@
-//variables
+//mobile navbar
 const closeX = document.querySelector('.x')
 const burger = document.querySelector('.burger')
 const nav = document.querySelector('.navbar')
-
-// functions
 
 const hideNavbar = () => {
     nav.classList.remove('nav-active')
@@ -63,7 +61,8 @@ window.addEventListener('resize', () => {
     removeFromStockText()
 })
 
-//since css is mobile first, calling a function to set default for desktop
+//since css is mobile-first, calling functions which require default setup
 
+navMove()
 appendToStockText()
 
