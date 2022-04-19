@@ -1,10 +1,7 @@
-//variables
+//navbar move
 const closeX = document.querySelector('.x')
 const burger = document.querySelector('.burger')
 const nav = document.querySelector('.navbar')
-
-
-// functions
 
 const hideNavbar = () => {
     nav.classList.remove('nav-active')
