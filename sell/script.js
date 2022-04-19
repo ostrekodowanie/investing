@@ -33,7 +33,7 @@ const stockTextDiv = document.querySelectorAll('.stock-text')
 
 const appendToStockText = () => {
     let screenWidth = window.innerWidth
-    if(screenWidth >= 1340) {
+    if(screenWidth >= 1400) {
         for(let i = 0; i < stock.length; i++) {
             stockTextDiv[i].append(stockParagraph[i])
         }
@@ -43,7 +43,7 @@ const appendToStockText = () => {
 const removeFromStockText = () => {
     let screenWidth = window.innerWidth
     let putBefore = document.querySelectorAll('.stock a')
-    if(screenWidth < 1340) {
+    if(screenWidth < 1400) {
         for(let i = 0; i < stock.length; i++) {
             stock[i].insertBefore(stockParagraph[i], putBefore[i])
         }
