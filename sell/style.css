@@ -238,13 +238,13 @@ main,
 
 .stock h3 {
 	color: white;
-	font-weight: normal;
+	font-weight: 500;
 	margin: 1.2em 0 0.9em 0;
 }
 
 .stock h4 {
 	color: rgba(255, 255, 255, 0.47);
-	font-weight: normal;
+	font-weight: 500;
 	margin: 0;
 }
 
@@ -265,7 +265,12 @@ main,
 	justify-self: center;
 }
 
-
+.select:hover::after {
+	content: "";
+	display: block;
+	height: .1em;
+	background-color: #246FFF;
+}
 
 .footer {
 	margin-top: 2rem;
@@ -281,12 +286,16 @@ main,
 }
 
 
-/*script classes*/
+/*script and utility classes*/
 
 .nav-active,
 .x-active {
 	transform: translateX(0%) !important;
 	opacity: 1 !important;
+}
+
+.display-desktop {
+	display: none;
 }
 
 @media only screen and (min-width: 750px) {
@@ -315,9 +324,59 @@ main,
 		display: flex;
 		align-items: center;
 	}
+
+	/*section 1*/
+
+	.s1 h1 {
+		font-size: 2.5rem;
+	}
+
+	.s1 p {
+		font-size: 1.5rem;
+	}
+
+	.s1 input {
+		font-size: 1.3rem;
+		padding-right: 10em;
+	}
+
+	/*section 2*/
+
+	.stock img {
+		max-width: 1.8in;
+	}
+
+	.stock-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 1.5rem;
+	}
+
+	.stock-text h3 {
+		font-size: 1.5rem;
+		margin: 0;
+	}
+
+	.stock-text h4 {
+		font-size: 1.3rem;
+	}
+
+	.stock p {
+		font-size: 1.2rem;
+	}
+
+	.select {
+		font-size: 1.4rem;
+	}
+	
 }
 
-@media only screen and (min-width: 1340px) {
+@media only screen and (min-width: 1400px) {
+	.display-desktop {
+		display: block;
+	}
+
 	.header small {
 		font-size: 1rem;
 	}
@@ -362,18 +421,19 @@ main,
 
 	.stock-text {
 		display: grid;
-		grid-template-columns: repeat(2, 3in);
+		grid-template-columns: repeat(2, max(16vw, 16rem)) max-content;
+		gap: 0;
 	}
 
 	.stock-text h3 {
 		margin: 0;
-		font-size: 1.6rem;
+		font-size: 1.7rem;
 		align-self: center;
 	}
 
 	.stock-text h4 {
 		align-self: center;
-		font-size: 1.4rem;
+		font-size: 1.5rem;
 	}
 
 	.stock-text p {
