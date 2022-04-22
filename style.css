@@ -21,7 +21,6 @@ html, body{
 	flex-direction: column;
 	position: relative;
 	z-index: -99;
-	background-color: red;
 }
 
 main,
